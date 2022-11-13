@@ -1,4 +1,3 @@
-
 import './App.css';
 import {Component } from 'react'
 import CardLists from './components/card-list/card-list.component';
@@ -53,8 +52,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        
-        <SearchBox onChangeHandler = {onSearchChange} placeholder= "Search Monsters" classname = 'search-box' />
+        <h1 className='app-title'> Eri's Roledex</h1>
+        <SearchBox onChangeHandler = {onSearchChange} 
+          placeholder= "Search Monsters" 
+          classname = 'monsters-search-box' 
+        />
         <CardLists monsters={filteredMonsters}/>
       </div>
     );
